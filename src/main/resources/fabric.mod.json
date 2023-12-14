@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "boss_power_surge",
+  "version": "${version}",
+  "name": "Boss Power Surge",
+  "description": "This is a description",
+  "authors": [
+    "Timefall Development"
+  ],
+  "contact": {
+    "repo": "https://github.com/orgs/Timefall-Development/Boss-Power-Surge"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/boss_power_surge/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "dev.timefall.boss_power_surge.client.BossPowerSurgeClient"
+    ],
+    "main": [
+      "dev.timefall.boss_power_surge.BossPowerSurge"
+    ],
+    "cardinal-components": [
+      "dev.timefall.boss_power_surge.components.SurgeComponents"
+    ]
+  },
+  "mixins": [
+    "boss_power_surge.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  },
+  "custom": {
+    "cardinal-components": [
+      "boss_power_surge:surge"
+    ]
+  }
+}
